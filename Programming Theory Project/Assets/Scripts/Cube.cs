@@ -11,8 +11,6 @@ public class Cube : Shape
 
     public override void DisplayText()
     {
-        Color32 objectColor32 = gameObject.GetComponent<MeshRenderer>().material.color;
-        string objectColor = objectColor32.ToString();
-        textBox.text = "This is " + objectColor;
+        textBox.text = "This is " + GetColor();
     }
 }

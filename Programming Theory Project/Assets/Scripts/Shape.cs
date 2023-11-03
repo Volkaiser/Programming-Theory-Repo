@@ -29,4 +29,11 @@ public class Shape : MonoBehaviour
         ObjectName = gameObject.name;
         textBox.text = "This is a " + ObjectName;
     }
+
+    public string GetColor()
+    {
+        Color32 objectColor32 = gameObject.GetComponent<MeshRenderer>().material.color;
+        string objectColor = objectColor32.ToString();
+        return objectColor;
+    }
 }
