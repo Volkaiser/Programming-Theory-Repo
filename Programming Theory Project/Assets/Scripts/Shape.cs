@@ -5,11 +5,28 @@ using TMPro;
 
 public class Shape : MonoBehaviour
 {
-    public TMP_Text textBox;
+    [SerializeField]
+    protected TMP_Text textBox;
+    private string objectName;
+    public string ObjectName
+    {
+        get { return objectName; }
+        private set
+        {
+            if(value == "Sphere" || value == "Cube" || value == "Cylinder")
+            {
+                objectName = value;
+            }
+            else
+            {
+                Debug.LogError("This is not a valid shape.");
+            }
+        }
+    }
 
     public virtual void DisplayText()
     {
-        string objectName = gameObject.name;
-        textBox.text = "This is a " + objectName;
+        ObjectName = gameObject.name;
+        textBox.text = "This is a " + ObjectName;
     }
 }
