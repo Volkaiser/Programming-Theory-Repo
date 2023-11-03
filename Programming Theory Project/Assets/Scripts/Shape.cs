@@ -7,25 +7,9 @@ public class Shape : MonoBehaviour
 {
     public TMP_Text textBox;
 
-    public void DisplayText()
+    public virtual void DisplayText()
     {
         string objectName = gameObject.name;
-        Color32 objectColor32 = gameObject.GetComponent<MeshRenderer>().material.color;
-        string objectColor = objectColor32.ToString();
-        switch (objectName)
-        {
-            case "Cylinder":
-                textBox.text = "This is a " + objectName + " and it is " + objectColor;
-                break;
-            case "Cube":
-                textBox.text = "This is " + objectColor;
-                break;
-            case "Sphere":
-                textBox.text = "This is a " + objectName;
-                break;
-            default:
-                textBox.text = "Default";
-                break;
-        }
+        textBox.text = "This is a " + objectName;
     }
 }
