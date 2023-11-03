@@ -7,7 +7,7 @@ public class Shape : MonoBehaviour
 {
     public TMP_Text textBox;
 
-    private void OnMouseDown()
+    public void DisplayText()
     {
         string objectName = gameObject.name;
         Color32 objectColor32 = gameObject.GetComponent<MeshRenderer>().material.color;
