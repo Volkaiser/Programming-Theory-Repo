@@ -12,6 +12,6 @@ public class Cylinder : Shape
     public override void DisplayText()
     {
         base.DisplayText();
-        textBox.text = textBox.text + " and it is " + GetColor();
+        textBox.text = textBox.text + ", " + GetColor();
     }
 }

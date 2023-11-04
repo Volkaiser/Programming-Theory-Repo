@@ -11,6 +11,6 @@ public class Cube : Shape
 
     public override void DisplayText()
     {
-        textBox.text = "This is " + GetColor();
+        textBox.text = GetColor();
     }
 }

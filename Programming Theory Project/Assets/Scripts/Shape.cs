@@ -27,7 +27,7 @@ public class Shape : MonoBehaviour
     public virtual void DisplayText()
     {
         ObjectName = gameObject.name;
-        textBox.text = "This is a " + ObjectName;
+        textBox.text = ObjectName;
     }
 
     public string GetColor()

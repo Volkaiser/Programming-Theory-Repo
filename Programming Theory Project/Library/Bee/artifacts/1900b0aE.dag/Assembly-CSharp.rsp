@@ -356,6 +356,7 @@
 "Assets/Scripts/Cylinder.cs"
 "Assets/Scripts/Shape.cs"
 "Assets/Scripts/Sphere.cs"
+"Assets/Scripts/TitleScreen.cs"
 -langversion:9.0
 
 /deterministic
