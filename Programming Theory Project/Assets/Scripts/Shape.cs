@@ -8,7 +8,7 @@ public class Shape : MonoBehaviour
     [SerializeField]
     protected TMP_Text textBox;
     private string objectName;
-    public string ObjectName
+    public string ObjectName // ENCAPSULATION
     {
         get { return objectName; }
         private set
@@ -30,7 +30,7 @@ public class Shape : MonoBehaviour
         textBox.text = ObjectName;
     }
 
-    public string GetColor()
+    public string GetColor() // ABSTRACTION
     {
         Color32 objectColor32 = gameObject.GetComponent<MeshRenderer>().material.color;
         string objectColor = objectColor32.ToString();

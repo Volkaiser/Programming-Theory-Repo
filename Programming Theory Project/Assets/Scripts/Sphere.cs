@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sphere : Shape
+public class Sphere : Shape // INHERITANCE
 {
     private void OnMouseDown()
     {

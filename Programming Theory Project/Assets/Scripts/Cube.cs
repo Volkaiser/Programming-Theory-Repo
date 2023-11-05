@@ -9,7 +9,7 @@ public class Cube : Shape
         DisplayText();
     }
 
-    public override void DisplayText()
+    public override void DisplayText() // POLYMORPHISM
     {
         textBox.text = GetColor();
     }
